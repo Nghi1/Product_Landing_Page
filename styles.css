@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: ububtu;
+  }
+  body{
+    background-color: rgb(240, 240, 240);
+  }
+  #header{
+     position: -webkit-sticky; /* Safari */
+      position: sticky;
+      top: 0;
+    display: flex;
+  }
+  #header-img{
+    margin: 15px;
+    width:240px;
+    height: 30px;
+  }
+  #nav-bar{
+    width: 75%;
+    padding: 25;
+    font-size: 20px;
+    text-align: right;
+  }
+  .nav-link{
+    display: inline-block;
+    text-decoration: none;
+    color: #222;
+    margin-left: 5vw; 
+  }
+  h3{
+    text-align: center;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+  #form{
+    margin-top: 10px;
+    text-align: center;
+  }
+  #submit{
+    background-color: orange;
+    border: none;
+    width: 100px;
+    height: auto;
+    margin-top: 10px;
+  }
+  ul{
+    width: 50%;
+    margin: 50 auto;
+  }
+  ul li i{
+    width: 25%;
+    color: orange;
+    float: left;
+  }
+  ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 10px;
+  }
+  ul li h4, p{
+    float: right;
+    width: 75%;
+  }
+  #video{
+    margin: 0 auto;
+  }
+  .box{
+    display: flex;
+    justify-content: center;
+  }
+  .box-1, .box-2, .box-3{
+    margin: 15px;
+    width: 25%;
+    height: 15em;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .box-1 div, .box-2 div, .box-3  div{
+    padding: 10 0;
+    text-align: center;
+    background-color:rgb(210, 210, 210);
+    width: 100%;
+    height: 2.5em;
+  }
+  .box a{
+    margin-top: 50px;
+    background-color: orange;
+    text-decoration: none;
+    padding: 10;
+    color: #222;
+    width: 80px;
+  
+  }
+  .box p{
+    text-align:center;
+  
+  }
+  #footer{
+    background-color:rgb(210, 210, 210);
+    margin: 0 auto;
+    width: 75%;
+    height: 5em;
+    position: relative;
+  }
+  #footer a{
+    float: right;
+     text-decoration: none;
+     padding: 10;
+    color: #222;
+  }
+  #footer p{
+    position: absolute;
+    right: 10;
+    bottom: 10;
+    float: right;
+    text-align: right;
+    color: #222;
+  }
+  @media only screen and (max-width: 800px){
+    #header{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    #header .nav-link{
+      text-align: center;
+      display: block;
+    }
+    .box{
+      flex-direction: column;
+      align-items: center;
+    }
+    .box-1, .box-2, .box-3{
+      width: 50%;
+    }
+  }
